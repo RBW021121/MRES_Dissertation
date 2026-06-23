@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{table}[htbp]
+\centering
+\caption{Regime-Specific and Transition Parameters (Updated Suffixes)}
+\label{tab:regime_parameters_updated}
+\begin{tabular}{lrrrrrr}
+\toprule
+\textbf{Parameter} & \textbf{Coef.} & \textbf{Std. Err.} & \textbf{\textit{z}} & \textbf{\textit{P}$>$\textit{$|z|$}} & \textbf{[0.025} & \textbf{0.975]} \\
+\midrule
+\multicolumn{7}{l}{\textbf{Regime 0 Parameters}} \\
+\midrule
+const  & -1.3591 & 0.051 & -26.457 & 0.000 & -1.460 & -1.258 \\
+x1     & -0.0856 & 0.001 & -59.038 & 0.000 & -0.088 & -0.083 \\
+x2     &  0.3591 & 0.052 &   6.952 & 0.000 &  0.258 &  0.460 \\
+$\sigma^2$ &  4.6344 & 0.070 &  66.537 & 0.000 &  4.498 &  4.771 \\
+\midrule
+\multicolumn{7}{l}{\textbf{Regime 1 Parameters}} \\
+\midrule
+const  &  19.1433 & 0.596 &  32.114 & 0.000 &  17.975 &  20.312 \\
+x1     &  -1.0932 & 0.012 & -89.772 & 0.000 &  -1.117 &  -1.069 \\
+x2     &   2.1043 & 0.585 &   3.595 & 0.000 &   0.957 &   3.252 \\
+$\sigma^2$ & 167.3429 & 2.888 &  57.938 & 0.000 & 161.682 & 173.004 \\
+\midrule
+\multicolumn{7}{l}{\textbf{Regime Transition Parameters}} \\
+\midrule
+$p[0 \rightarrow 0].\text{const}$ &   2.5856 & 0.218 &  11.884 & 0.000 &   2.159 &   3.012 \\
+$p[1 \rightarrow 0].\text{const}$ &  -0.5768 & 0.293 &  -1.967 & 0.049 &  -1.152 &  -0.002 \\
+$p[0 \rightarrow 0].\text{position}_t$ &  -0.0572 & 0.004 & -14.297 & 0.000 &  -0.065 &  -0.049 \\
+$p[1 \rightarrow 0].\text{position}_t$ &   0.0303 & 0.003 &   9.766 & 0.000 &   0.024 &   0.036 \\
+$p[0 \rightarrow 0].\text{ramp}_t$ &   0.0008 & 0.002 &   0.361 & 0.718 &  -0.003 &   0.005 \\
+$p[1 \rightarrow 0].\text{ramp}_t$ &  -0.0003 & 0.002 &  -0.125 & 0.900 &  -0.005 &   0.004 \\
+$p[0 \rightarrow 0].\text{major}_t$ &   1.4657 & 0.137 &  10.668 & 0.000 &   1.196 &   1.735 \\
+$p[1 \rightarrow 0].\text{major}_t$ &  -1.4403 & 0.166 &  -8.700 & 0.000 &  -1.765 &  -1.116 \\
+$p[0 \rightarrow 0].\text{follow}_t$ &   0.9111 & 0.122 &   7.444 & 0.000 &   0.671 &   1.151 \\
+$p[1 \rightarrow 0].\text{follow}_t$ &   0.1934 & 0.192 &   1.010 & 0.313 &  -0.182 &   0.569 \\
+$p[0 \rightarrow 0].\text{neighbour}_t$ &   0.0217 & 0.010 &   2.094 & 0.036 &   0.001 &   0.042 \\
+$p[1 \rightarrow 0].\text{neighbour}_t$ &  -0.0588 & 0.013 &  -4.540 & 0.000 &  -0.084 &  -0.033 \\
+$p[0 \rightarrow 0].\text{ramp}_t \times \text{major}$ &  -0.0037 & 0.001 &  -2.911 & 0.004 &  -0.006 &  -0.001 \\
+$p[1 \rightarrow 0].\text{ramp}_t \times \text{major}$ &   0.0025 & 0.002 &   1.570 & 0.116 &  -0.001 &   0.006 \\
+$p[0 \rightarrow 0].\text{ramp}_t \times \text{neighbour}$ &  -0.0004 & $9.54 \times 10^{-5}$  &  -4.701 & 0.000 &  -0.001 &  -0.000 \\
+$p[1 \rightarrow 0].\text{ramp}_t \times \text{neighbour}$ & $-5.48 \times 10^{-5}$ & 0.000 &  -0.477 & 0.634 &  -0.000 &   0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}
